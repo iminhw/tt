@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("li").each(function(index) {
+					$(this).hover(function() {
+						$("li").animate({
+							width: 100
+						})
+					})
+				})
+			}, 500)
+		</script>
+		<title>发布商品</title>
+	</head>
+	<body>
+		<header>
+			<aside>
+				<ul>
+					<li><a href="edite_pwd.html">修改密码</a></li>
+					<li><a href="edite_contact.html">修改联系方式</a></li>
+					<li><a href="my_order.html">我的订单</a></li>
+					<li><a href="my_product.html">我的商品</a></li>
+					<li><a href="purchase_history.html">消费记录</a></li>
+					<li><a href="add_product.html">发布商品</a></li>
+				</ul>
+			</aside>
+		</header>
+		<article>
+			<form action="#" method="post">
+				商品名称：<input type="text" name="name" id="" value="" />
+				<br>
+				价格：<input type="text" name="price" id="" value="" />
+				<br>描述信息：<textarea rows="30" cols="5">
+
+				</textarea>
+				<br>图片：<input type="file" name="picture" id="" value="" />
+				<br>视频：<input type="file" name="video" id="" value="" />
+
+				<input type="submit" value="发布商品" />
+				<input type="reset" name="" id="" value="取消" />
+			</form>
+			<a href="add_msg.html">发送留言</a>
+		</article>
+		<footer>
+			<aside></aside>
+			<hr>
+			<p>版权所有&copy; <a href="minhw.com">minhw.com</a></p>
+		</footer>
+	</body>
+</html>
+ody>
+</html>

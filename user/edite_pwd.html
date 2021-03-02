@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("li").each(function(index) {
+					$(this).hover(function() {
+						$("li").animate({
+							width: 100
+						})
+					})
+				})
+			}, 500)
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<article>
+			<form action="#" method="post">
+				原始密码：<input type="password" name="pwd" />
+				新密码：<input type="password" name="pwd" />
+				确认新密码：<input type="password" name="pwd" />
+				<input type="submit" value="修改"/>
+				<input type="reset" name="" id="" value="取消" />
+			</form>
+		</article>
+	</body>
+</html>

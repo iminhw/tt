@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="./css/style.css"/> -->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("li").each(function(index) {
+					$(this).hover(function() {
+						$("li").animate({
+							width: 100
+						})
+					})
+				})
+			}, 500)
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			 
+		</header>
+		<article>
+			<h2>注册</h2>
+			<form action="javaScript:void(0)" method="post">
+				<label>账号</label>
+				<input type="text" name="account" required="required" id="" value="" />
+				<label>密码</label>
+				<input type="password" name="pwd" />
+				<label>确认密码</label>
+				<input type="password" name="pwd" />
+				<label>寝室</label>
+				<input type="text" name="room" id="" value="" />
+				<label>电话</label>
+				<input type="text" name="telephone" id="" value="" />
+				<label>头像</label>
+				<input type="file" name="picture" id="" value="" />
+				<input type="submit" value="注册"/>
+			</form>
+		</article>
+		<footer>
+			<hr >
+			<p>版权所有&copy; <a href="minhw.com">minhw.com</a></p>
+		</footer>
+	</body>
+</html>

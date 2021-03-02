@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("li").each(function(index) {
+					$(this).hover(function() {
+						$("li").animate({
+							width: 100
+						})
+					})
+				})
+			}, 500)
+		</script>
+		<title>跳蚤市场</title>
+	</head>
+	<body>
+		<header>
+			<a href="admin.html">跳蚤市场</a>
+			<div id="">
+				<a href="">admin</a>
+				<a href="/">退出</a>
+			</div>
+			<nav>
+				<h4>系统管理</h4>
+				<ul>
+					<li><a href="user_manage.html">用户管理</a></li>
+					<li><a href="#">商品审核</a></li>
+					<li><a href="tag_manage.html">分类管理</a></li>
+					<li><a href="#">配置管理</a></li>
+				</ul>
+			</nav>
+		</header>
+		<footer>
+			<aside></aside>
+			<hr>
+			<p>版权所有&copy; <a href="minhw.com">minhw.com</a></p>
+		</footer>
+	</body>
+</html>

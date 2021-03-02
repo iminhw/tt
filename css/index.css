@@ -1,0 +1,117 @@
+.tags {
+	width: 66.875rem;
+	height: 26.875rem;
+	background-color: #fef9f4;
+	position: relative;
+	left: 6.25rem;
+	top: 0rem;
+}
+
+.link {
+	width: 12.5rem;
+	height: 100%;
+}
+
+.link .item {
+	width: 100%;
+	height: 5.25rem;
+	position: relative;
+	top: -3.75rem;
+	float: left;
+	border-bottom: 0.0625rem #E6E6E6 solid;
+}
+
+.link .item h3 {
+	height: 1.5625rem;
+	padding-left: 1.5625rem;
+}
+
+.link .item h3 a {
+	color: #444241;
+	font-size: 0.9375rem;
+}
+
+.link .item p {
+	height: 18px;
+	padding-left: 1.125rem;
+}
+
+.link .item p a {
+	font-size: 12px;
+	position: relative;
+	top: -0.625rem;
+	color: #444241;
+}
+
+.index {
+	width: 50rem;
+	position: relative;
+	left: 260px;
+	top: -480px;
+}
+
+.user {
+	width: 12.5rem;
+	height: 100%;
+	background-color: #FEF9F4;
+	position: relative;
+	left: 875px;
+	top: -920px;
+}
+
+.account {
+	position: relative;
+	left: 20px;
+	top: 3.75rem;
+}
+
+.account input {
+	border: none;
+	border-bottom: 1px #E6E6E6 solid;
+	background-color: #FEF9F4;
+}
+
+#login {
+	width: 80px;
+	height: 40px;
+	background-color: #dd2727;
+	color: #FFFFFF;
+	font-size: medium;
+	font-family: "times new roman";
+	border: 0.0625rem #DD2727 solid;
+}
+
+.button {
+	width: 5rem;
+	height: 2.375rem;
+	position: relative;
+	left: 83px;
+	top: -40px;
+	background-color: #dd7d27;
+	border: 1px #DD7D27 solid;
+}
+
+.button a {
+	color: #FFFFFF;
+	position: relative;
+	left: 1.4375rem;
+	top: 0.625rem;
+}
+
+.commend {
+	width: 855px;
+	height: 390px;
+	position: relative;
+	left: 213px;
+	top: -400px;
+}
+
+.goods {
+	width: 210px;
+	height: 190px;
+	background-color: white;
+	float: left;
+	border: 1px #F5F5F5 solid;
+	text-align: center;
+	margin: 10px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("li").each(function(index) {
+					$(this).hover(function() {
+						$("li").animate({
+							width: 100
+						})
+					})
+				})
+			}, 500)
+		</script>
+		<style type="text/css">
+			#detail 
+			{
+				border: 0.125rem solid red;
+			}
+		</style>
+		<title>商品详情</title>
+	</head>
+	<body>
+		<header>
+			<aside>
+				<ul>
+					<li><a href="edite_pwd.html">修改密码</a></li>
+					<li><a href="edite_contact.html">修改联系方式</a></li>
+					<li><a href="my_order.html">我的订单</a></li>
+					<li><a href="my_product.html">我的商品</a></li>
+					<li><a href="purchase_history.html">消费记录</a></li>
+					<li><a href="add_product.html">发布商品</a></li>
+				</ul>
+			</aside>
+		</header>
+		<article>
+			<section id="detail">
+				<img src="img/88C6128B981FF7AD43C404D911DC5196.png" width="500" height="400" >
+				<img src="img/88C6128B981FF7AD43C404D911DC5196.png" alt="" >
+				<img src="img/88C6128B981FF7AD43C404D911DC5196.png" >
+				<img src="img/88C6128B981FF7AD43C404D911DC5196.png" >
+				<h1>ipad 4gb 16gb wifiban</h1>
+				现价：200元<br>
+				编号:50513180
+				<a href="#">立即购买</a>
+				<h4>产品介绍</h4>
+				<p>1.阿三开回家都不卡上的班
+				2.阿萨德了卡斯蒂略
+				3.撒开回家不开机
+				</p>
+				<video width="640" height="360">
+					<source src="myvideo.mp4" type="video/mp4"></source>
+					<source src="myvideo.ogv" type="video/ogg"></source>
+					<source src="myvideo.webm" type="video/webm"></source>
+					<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+						<param name="movie" value="myvideo.swf" />
+						<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
+			</section>
+		</article>
+		<footer>
+			<aside></aside>
+			<hr>
+			<p>版权所有&copy; <a href="minhw.com">minhw.com</a></p>
+		</footer>
+	</body>
+</html>

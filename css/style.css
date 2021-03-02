@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F1F1F1;
+	font-size: 14px;
+	font-family: '宋体'，sans-serif;
+	font-style: normal;
+}
+
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+ul li {
+	display: inline-block;
+}
+
+header {
+	height: 6.25rem;
+	border: 0.125rem solid #dfc9b2;
+	margin-top: 0.3125rem;
+	margin-bottom: 0.3125rem;
+}
+
+footer {
+	height: 12.5rem;
+	border: 0.125rem solid #DFC9B2;
+	margin-top: 0.3125rem;
+}
+
+section {
+	margin: 0.625rem auto;
+	padding: 0.625rem;
+	border: 0.125rem solid #DFC9B2;
+}
+
+table {
+	width: 57.8125rem;
+	margin: 0.625rem auto;
+	border: 0.125rem solid #DFC9B2;
+}
+
+.table_head {
+	height: 1.625rem;
+	line-height: 1.625rem;
+	padding: 0.125rem 0 0 0;
+	background-color: #faf8f2;
+	border-bottom: 1px solid #eadbc9;
+	color: #8a7152;
+}
+
+.total {
+	text-align: right;
+	margin: auto;
+	background: #f1f5f8;
+}
+
+#pay_order {
+	height: 12.5rem;
+	margin: 0.625rem;
+}
+
+#pay_info {
+	float: left;
+	width: 26.875rem;
+	height: 12.5rem;
+	margin: 0.625rem;
+}
+#pay_type{
+	float: left;
+	width: 26.875rem;
+	height: 12.5rem;
+	margin: 0.625rem;
+}
+
+.clear {
+	clear: both;
+}
+
+#order {
+	text-align: center;
+	background-color: #FAF8F2;
+}
+
+textarea {
+	width: 31.25rem;
+	height: 6.25rem;
+	border-radius: 0.625rem;
+	margin: 0.625rem auto;
+}
+
+.button {
+	background-color: #3de3e3;
+	border-radius: 10;
+}
+
+.submit {
+	text-align: center;
+}

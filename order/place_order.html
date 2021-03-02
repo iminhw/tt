@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("li").each(function(index) {
+					$(this).hover(function() {
+						$("li").animate({
+							width: 100
+						})
+					})
+				})
+			}, 500)
+		</script>
+		<style type="text/css">
+		
+			
+		</style>
+		<title>下订单</title>
+	</head>
+	<body>
+		<header>
+			<aside>
+				<ul>
+					<li><a href="edite_pwd.html">修改密码</a></li>
+					<li><a href="edite_contact.html">修改联系方式</a></li>
+					<li><a href="my_order.html">我的订单</a></li>
+					<li><a href="my_product.html">我的商品</a></li>
+					<li><a href="purchase_history.html">消费记录</a></li>
+					<li><a href="add_product.html">发布商品</a></li>
+				</ul>
+			</aside>
+		</header>
+		<acticle>
+			<section>
+				<h3>购买商品</h3>
+				<table class="table_head" border="" cellspacing="" cellpadding="">
+					<!-- <tr><th>Header</th></tr> -->
+					<tr><td>商品信息</td>
+					<td>单价</td>
+					<td>数量</td>
+					<td>总价</td>
+					<td><img src="img/88C6128B981FF7AD43C404D911DC5196.png" width="54px" height="54px" >ipad</td>
+					<td>¥1200</td>
+					</tr>
+				</table>
+				应付金额：¥1200
+				
+				<h3>收货人信息</h3>
+				<form action="#" method="post">
+					收货人：<input type="text" name="username" id="" value="" />
+					收货地址：<input type="text" name="addr" id="" value="" />
+					联系方式：<input type="text" name="phone" id="" value="" />
+					<div class="total">
+						共1件商品 应付金额： ¥1205（含运费5.00元）
+						<input type="submit" value="订单结算" />
+					</div>
+				</form>
+			</section>
+		</acticle>
+		
+		<footer>
+			<aside></aside>
+			<hr>
+			<p>版权所有&copy; <a href="minhw.com">minhw.com</a></p>
+		</footer>
+	</body>
+</html>

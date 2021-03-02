@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script type="text/javascript">
+			const SelectAll = () => {
+				const checkboxs = document.getElementsByName("choose");
+				for (let i = 0; checkboxs.length; i++) {
+					const e = checkboxs[i];
+
+					if (e != 'undefined') {
+						e.checked = 'checked';
+					}
+
+				}
+			}
+		</script>
+		<title>收件箱</title>
+	</head>
+	<body>
+		<header>
+			<aside>
+				<ul>
+					<li><a href="edite_pwd.html">修改密码</a></li>
+					<li><a href="edite_contact.html">修改联系方式</a></li>
+					<li><a href="my_order.html">我的订单</a></li>
+					<li><a href="my_product.html">我的商品</a></li>
+					<li><a href="purchase_history.html">消费记录</a></li>
+					<li><a href="add_product.html">发布商品</a></li>
+				</ul>
+			</aside>
+		</header>
+		<article>
+			<table border="" cellspacing="" cellpadding="">
+				<!-- <tr><th>Header</th></tr> -->
+				<tr>
+					<td>选中</td>
+					<td>主题</td>
+					<td>时间</td>
+					<td>发件人</td>
+					<td>状态</td>
+					<td>详情</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="choose" id="" value="" /></td>
+					<td>关于ipad购买时间</td>
+					<td>1小时前</td>
+					<td>闵宏伟</td>
+					<td>未读</td>
+					<td><a href="#">详情</a></td>
+				</tr>
+				<tr>
+					<td colspan="6" align="right">
+						<a href="#">第一页</a>
+						<a href="#">上一页</a>
+						<a href="#">下一页</a>
+						<a href="#">末页</a>
+					</td>
+				</tr>
+			</table>
+			<input type="button" name="" id="" value="全选" onclick="SelectAll()" />
+			<input type="submit" name="" id="" value="删除" />
+		</article>
+		<footer>
+			<aside></aside>
+			<hr>
+			<p>版权所有&copy; <a href="minhw.com">minhw.com</a></p>
+		</footer>
+	</body>
+</html>
