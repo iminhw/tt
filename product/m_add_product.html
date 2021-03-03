@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/m_add_product.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> -->
+    <!--		<link rel="stylesheet" type="text/css" href="../css/main.css" />-->
+    <!--		<link rel="stylesheet" type="text/css" href="../css/index.css" />-->
+    <!--		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>-->
+    <!--		<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>-->
+    <!--		<script type="text/javascript">-->
+    <!--			$(document).ready(function() {-->
+    <!--				$("li").each(function(index) {-->
+    <!--					$(this).hover(function() {-->
+    <!--						$("li").animate({-->
+    <!--							width: 100-->
+    <!--						})-->
+    <!--					})-->
+    <!--				})-->
+    <!--			}, 500)-->
+    <!--		</script>-->
+	<script type="text/javascript">
+		const goods = {
+			name: "",
+			price: "",
+			information: "",
+		};
+		upload = () => {
+			goods.name = document.getElementById("name").value;
+			goods.price = document.getElementById("price").value;
+			goods.information = document.getElementById("information").value;
+			if (goods.name == "" || goods.price == "" || goods.information == "") {
+				alert("商品信息不完整");
+				return;
+			}
+			console.log(goods);
+		}
+	</script>
+    <title>发布商品</title>
+</head>
+<body>
+<header>
+    <!--			<aside>-->
+    <!--				<ul>-->
+    <!--					<li><a href="edite_pwd.html">修改密码</a></li>-->
+    <!--					<li><a href="edite_contact.html">修改联系方式</a></li>-->
+    <!--					<li><a href="my_order.html">我的订单</a></li>-->
+    <!--					<li><a href="my_product.html">我的商品</a></li>-->
+    <!--					<li><a href="purchase_history.html">消费记录</a></li>-->
+    <!--					<li><a href="add_product.html">发布商品</a></li>-->
+    <!--				</ul>-->
+    <!--			</aside>-->
+</header>
+<article class="add">
+    <form action="#" method="post">
+        <div>商品名称：<input type="text" name="name" id="name" spellcheck="true" required value=""/>
+        </div>
+        <div>
+            商品价格：
+            <span contenteditable="true">¥</span>
+            <input type="text" name="price" id="price" required value=""/>
+        </div>
+        <div>描述信息：<textarea id="information" rows="50" cols="5" spellcheck="true" required>
+
+				</textarea>
+        </div>
+<!--        <div>图片：<input type="file" name="picture" id="" value=""/>-->
+<!--        </div>-->
+<!--        <div>视频：<input type="file" name="video" id="" value=""/></div>>-->
+
+            <input type="submit" value="发布商品"/>
+            <input type="reset" name="" id="" value="取消"/>
+    </form>
+    <a href="add_msg.html">发送留言</a>
+</article>
+<footer>
+	<ul>
+		<li>
+			<a class="active" href="m_index.html">首页</a>
+		</li>
+		<li>
+			<a href="product/add_product.html">商品管理</a>
+		</li>
+		<li>
+			<a href="product/product_list.html">商品列表</a>
+		</li>
+		<li>
+			<a href="#">个人中心</a>
+		</li>
+	</ul>
+	<div style="height: 50px" hidden="hidden"></div>
+	<!--    <div class="navbar">-->
+	<!--        <div class="linkfooter">-->
+	<!--            <li><a href="#">关于我们</a></li>-->
+	<!--            <li><a href="#">网站地图</a></li>-->
+	<!--            <li><a href="#">联系客服</a></li>-->
+	<!--            <li><a href="#">版权声明</a></li>-->
+	<!--        </div>-->
+	<!--    </div>-->
+	<!--    <div class="copyright">-->
+	<!--        <p>版权所有 &copy; <a href="minhw.com">minhw.com</a></p>-->
+	<!--    </div>-->
+</footer>
+</body>
+</html>
+ody>
+</html>

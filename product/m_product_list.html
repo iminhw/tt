@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="device-width,initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    		<link rel="stylesheet" type="text/css" href="../css/m_product_list.css" />
+    		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <!--		<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>-->
+    <!--		<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>-->
+    <!--		<script type="text/javascript">-->
+    <!--			$(document).ready(function() {-->
+    <!--				$("li").each(function(index) {-->
+    <!--					$(this).hover(function() {-->
+    <!--						$("li").animate({-->
+    <!--							width: 100-->
+    <!--						})-->
+    <!--					})-->
+    <!--				})-->
+    <!--			}, 500)-->
+    <!--		</script>-->
+    <script type="text/javascript">
+        const item = document.getElementsByClassName("item");
+        for (let i = 0; i < item.length; i++) {
+            item[i].onmousemover = function () {
+                this.style.background = 'rgb(200,200,200)';
+            }
+            item[i].onmousemout = function () {
+                this.style.background = 'rgb(255,255,255)';
+            }
+        }
+    </script>
+    <title>商品分类列表</title>
+</head>
+<body>
+<article>
+    <nav id="category">
+        <ul class="list_group">
+            <li class="active">手机</li>
+            <li>家电</li>
+            <li>相机</li>
+            <li>电脑</li>
+        </ul>
+    </nav>
+    <div class="products">
+        <ul class="list_group">
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+            <li>
+                <img src="../img/pexels-anna-nekrashevich-6801874.jpg">
+                <p><a href="#">ipone 11</a></p>
+            </li>
+
+        </ul>
+    </div>
+	<footer>
+		<ul>
+			<li>
+				<a class="active" href="m_index.html">首页</a>
+			</li>
+			<li>
+				<a href="product/add_product.html">商品管理</a>
+			</li>
+			<li>
+				<a href="product/product_list.html">商品列表</a>
+			</li>
+			<li>
+				<a href="#">个人中心</a>
+			</li>
+		</ul>
+		<div style="height: 50px" hidden="hidden"></div>
+	</footer>
+</article>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #F5f5f5;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.logo {
+    max-width: 100%;
+}
+.navbar{
+    background-color: white;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list li{
+    display: inline-block;
+}
+.nav-list a {
+    color: #000;
+    line-height: 50px;
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+.nav-list .current {
+    font-size: 2em;
+    border-bottom: 2px solid #C40000;
+}
+.nav-list li a:hover:not(.current) {
+    transform: scale(1.05); /*放大1。05倍*/
+    border-bottom: 2px solid #C40000;
+}
+label {
+    display: none;
+}
+.nav-toggle {
+    display: none;
+}
+
+.list_group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+/*  均匀排列每个元素，每个元素之间的间距相等  */
+}
+.list_group li{
+    margin: 2% 2% 0 2%;
+    background: white;
+    border: 1px solid gainsboro;
+}
+.list_group p {
+    text-align: center;
+}
+
+/**/
+@media screen and (max-width: 806px){
+    .navbar .nav-toggle{display: none}
+    .navbar label{display: block}
+    .navbar .nav-list{
+        display: none;
+        margin-left: 0px;
+    }
+    .navbar .nav-list li {
+        margin-left: 0px;
+    }
+    .navbar .nav-list a {
+        width: 100%;
+    }
+}
+
+input:checked~ .nav-list {
+    position: absolute;
+    display: block;
+    top: 70px;
+    width: 100%;
+    background: white;
+}
+input:checked~, .nav-list li {
+    color: white;
+    clear: both;
+    display: block;
+    text-align: center;
+}
+input:checked~ .nav-list .current {
+    background: #C40000;
+    color: white;
+    border-bottom: 2px solid #333333;
+}
+
+input:checked~ .nav-list a:hover:not(.current) {
+    background: #C40000;
+    color: white;
+    border-bottom: 2px solid #333333;
+}

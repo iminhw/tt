@@ -1,0 +1,17 @@
+.list_side {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.list_side li {
+    height: 2em;
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+}
+.list_side li.active {
+    background-color: #fff;
+    border-bottom: 4px solid rgb(196, 0, 0);
+    color: rgb(196,0,0);
+    font-weight: bold;
+}

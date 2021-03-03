@@ -1,0 +1,23 @@
+article {
+    margin: 30px 10px 0;
+}
+.add div {
+    border: 1px solid gainsboro;
+    padding: 5%;
+}
+.add div:after{
+    content: "*";
+}
+.add input,textarea {
+    width: 60%;
+    border: 1px solid gainsboro;
+}
+.add input[type=submit]{
+    width: 100%;
+    height: 2.5em;
+    margin-top: 10px;
+    background: linear-gradient(to right,#333333,#C40000,#333333); /*渐变背景色*/
+}
+textarea {
+    width: 100%;
+}
