@@ -218,3 +218,26 @@ aside ul li a:hover {
 aside ul li a:active {
 	color: #FCF3F3;
 }
+table tr {
+	height: 40px;
+}
+
+tr th {
+	background-color: #fff2e8;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+
+tr td {
+	width: 5%;
+	font-family: "宋体";
+	font-size: 15px;
+}
+table td a {
+	padding: 2px 5px;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	background-color: #C40000;
+	border-radius: 2px;
+	font-family: normal;
+}
